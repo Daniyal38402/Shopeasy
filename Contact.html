@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <main class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form below and we’ll respond as soon as possible.</p>
+
+    <div class="contact-wrapper">
+      <form class="contact-form" onsubmit="return validateForm()">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-details">
+        <h3>Reach Us At</h3>
+        <p><strong>Email:</strong> daniyalfarooq328@gmail.com</p>
+        <p><strong>Phone:</strong> +92 321 5414 483</p>
+        <p><strong>Address:</strong> Sahiwal, Sargodha Pakistan</p>
+        <h4>Follow Us</h4>
+        <p>
+          <a href="#">Facebook</a> |
+          <a href="#">Instagram</a> |
+          <a href="#">Twitter</a>
+        </p>
+      </div>
+    </div>
+
+    <iframe class="map"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54545.14961422676!2d72.65501981974562!3d32.08361158005545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392177f218f163db%3A0x26f16f60f7e9671f!2sSargodha%2C%20Punjab!5e0!3m2!1sen!2s!4v1718962843552!5m2!1sen!2s"
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
