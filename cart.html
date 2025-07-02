@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="cart-header">
+    <h1>My Shopping Cart</h1>
+  </header>
+  <main class="cart-container">
+    <section class="cart-items">
+      <div class="cart-item" data-price="129.99">
+        <img src="img/classical leather jacket.jfif" alt="Product Image" />
+        <div class="item-details">
+          <h3>Classic Leather Jacket</h3>
+          <p class="item-price">$129.99</p>
+          <label>Quantity:
+            <input type="number" class="qty" value="1" min="1" />
+          </label>
+        </div>
+        <button class="Order-btn">Order</button>
+      </div>
+
+      <div class="cart-item" data-price="89.99">
+        <img src="img/Modern sneakers.jfif" alt="Product Image" />
+        <div class="item-details">
+          <h3>Modern Sneakers</h3>
+          <p class="item-price">$89.99</p>
+          <label>Quantity:
+            <input type="number" class="qty" value="2" min="1" />
+          </label>
+        </div>
+        <button class="Order-btn">Order</button>
+      </div>
+
+      <div class="cart-item" data-price="199.99">
+        <img src="img/smart watch.jfif" alt="Product Image" />
+        <div class="item-details">
+          <h3>Smart watch</h3>
+          <p class="item-price">$199.99</p>
+          <label>Quantity:
+            <input type="number" class="qty" value="2" min="1" />
+          </label>
+        </div>
+        <button class="Order-btn">Order</button>
+      </div>
+
+      <div class="cart-item" data-price="59.99">
+        <img src="img/sunglasses.jpg" alt="Product Image" />
+        <div class="item-details">
+          <h3>Elegant Sunglasses</h3>
+          <p class="item-price">$59.99</p>
+          <label>Quantity:
+            <input type="number" class="qty" value="2" min="1" />
+          </label>
+        </div>
+        <button class="Order-btn">Order</button>
+      </div>
+    </section>
+
+    <aside class="cart-summary">
+      <h2>Order Summary</h2>
+      <p>Subtotal: <span id="subtotal">$0.00</span></p>
+      <p>Shipping: <span>Free</span></p>
+      <p><strong>Total: <span id="total">$0.00</span></strong></p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
